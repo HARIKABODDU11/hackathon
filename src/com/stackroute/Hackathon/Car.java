@@ -2,26 +2,24 @@ package com.stackroute.Hackathon;
 
 public class Car extends Vehicle{
 
-    public void getHandlingGear() {
-        System.out.println("Handling gear is:"+handlingGear);
-    }
+    private boolean handSteering;
+    private int handlingGear;
+
 
     public void setHandlingGear(int handlingGear) {
         this.handlingGear = handlingGear;
         System.out.println("handlingGear:"+handlingGear);
     }
-
-    private int handlingGear;
-
-    public void getHandSteering() {
-        System.out.println("Handling gear="+handSteering);
+    public void style(){
+        System.out.println("extremly stylish");
     }
+
+
 
     public void setHandSteering(boolean handSteering) {
         this.handSteering = handSteering;
-        System.out.println("handlingsteering"+handSteering);
+        System.out.println("handSteering:"+handSteering);
     }
 
-private boolean handSteering;
 
 }

@@ -1,31 +1,32 @@
 package com.stackroute.Hackathon;
 
 public class Vehicle {
-    private int speed;
-    private int noOfGears;
+     int speed;
+    int noOfSeats;
+    String model;
+    String licensePlateNo;
 
-    public int getSpeed() {
-        System.out.println("getSpeed:"+speed);
-        return speed;
+    public void setModel(String model) {
+        this.model = model;
+        System.out.println("vehicle model:"+model);
     }
+
+    public void setLicensePlateNo(String licensePlateNo) {
+        this.licensePlateNo = licensePlateNo;
+        System.out.println("vehicle license plateno:"+licensePlateNo);
+    }
+
 
     public void setSpeed(int speed) {
         this.speed = speed;
         System.out.println("setSpeed:"+speed);
     }
 
-    public int getNoOfGears() {
-        System.out.println("noofgears"+noOfGears);
-        return noOfGears;
+
+    public void setNoOfSeats(int noOfSeats) {
+        this.noOfSeats = noOfSeats;
+        System.out.println("no of seats:"+noOfSeats);
     }
-
-    public void setNoOfGears(int noOfGears) {
-
-        this.noOfGears = noOfGears;
-        System.out.println("setofgears"+noOfGears);
-    }
-
-
 
 }
 
